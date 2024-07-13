@@ -58,7 +58,7 @@ The names are are simple list of strings.
     'G', 'a', 'm', 'e', ' ', 'O', 'n', 'e', 0x0, 'G', 'a', 'm', 'e', ' ', 'T', 'w', 'o', 0x00
 }
 
-## Assembled example
+### Assembled example
 
 Offset | Data                                                            | Content
 -------|-----------------------------------------------------------------|------------------------------------
@@ -70,3 +70,10 @@ Offset | Data                                                            | Conte
 0x34   | 'G'  'a'  'm'  'e'  ' '  'O'  'n'  'e'  0x00                    | Title "Game One"
 0x3D   | 'G'  'a'  'm'  'e'  ' '  'T'  'w'  'o'  0x00                    | Title "Game Two"
 
+## Scripts
+
+The scripts/ folder contains scripts for generating the DB from different sources:
+
+- scripts/parse_GameDB.py : Parses GameDB from niemasd
+- scripts/parse_db.py : Parses redump DB from API
+- scripts/parse_hdldb.py : Parses israpps hdl batch installer DB
