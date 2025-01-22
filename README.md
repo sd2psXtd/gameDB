@@ -7,6 +7,7 @@ The game databases contain the following information for PS1/PS2:
 - **Title:** The title of the game
 - **Parent ID:** In case of multi disc games: The Id of Disc 1
 
+*Note: Arcade/COH cards don't need a prefix (all NM) and also don't need a parent id. Therefore there's only the id to offset mapping and the name list.*
 
 ## Format
 
@@ -30,7 +31,7 @@ ABCD        | 17
 BCDE        | 29
 
 *Assembles to:*
-Address | Data                                      
+Address | Data
 --------|-------------------
 0x00    | 0x41 0x42 0x43 0x44 0x00 0x00 0x00 0x10
 0x08    | 0x42 0x43 0x44 0x45 0x00 0x00 0x00 0x1C
@@ -77,3 +78,4 @@ The scripts/ folder contains scripts for generating the DB from different source
 - scripts/parse_GameDB.py : Parses GameDB from niemasd
 - scripts/parse_db.py : Parses redump DB from API
 - scripts/parse_hdldb.py : Parses israpps hdl batch installer DB
+- scripts/parse_arcade.py : Parses AthenaEnv Arcade DB for 246 and 256 systems.
